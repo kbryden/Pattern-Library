@@ -38,3 +38,168 @@
     }
 }
 
+/* this is the css for a basic horizontal navigation */
+
+.nav-horizontal {
+
+    background-color: #FFBD5C;
+    line-height: 2em;
+    color: #4A4A4A;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0 2em;
+        font-size: 1.25em;
+        position: center;
+        float: left;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4A4A4A;
+    }
+
+    a:hover {
+       color: #FFFFFF;
+       text-decoration: none;
+       font-family: 'Open Sans Bold', sans-serif;
+       transition: .25s;
+   }
+    
+    li:hover {
+        background-color: #FFBD5C;
+    }
+    
+    .current a {
+       color: #FFBD5C;
+    }
+    
+}
+
+/*this is the css for a hidden navigation in a hamburger menu*/
+
+/*main-nav*/
+.nav-hamburger-closed {
+  height: 3em;
+  width: 100%;
+  color: #4A4A4A;
+  background-color: #ffffff;
+    
+    ul {
+      list-style-type: none;
+      width: 70%;
+      margin: .8rem auto;
+    }
+    
+    ul li {
+      float: left;
+      padding: 0 1rem;
+    }
+}
+
+.nav-hamburger {
+    display: none;
+    background-color: HSLA(218, 95%, 17%, 1.00);
+    line-height: 2em;
+    color: #fff;
+    
+    
+    i {
+  font-style: normal;
+}
+
+.nav-icon {
+    cursor: pointer;
+    }
+
+    ul {
+    list-style-type: none;
+    position: relative;
+   }
+
+    li {
+    margin: .5em;
+   }
+
+    a{
+    color: #fff;
+    text-decoration: none;
+   }
+
+    a:hover{
+    color: HSLA(42, 75%, 53%, 1.00);
+    text-decoration: none;
+   }
+
+    .close-icon {
+    font-style: normal;
+    position: absolute;
+    right: 1em;
+    color: #fff;
+    line-height: 1;
+    cursor: pointer;
+   }
+
+    li {
+    position: relative;
+   }
+
+    li ul {
+  display: none;
+  font-size: .85em;
+  line-height: 1em;
+}
+
+    li:hover ul {
+  display: block;
+}
+
+    li ul a {
+    color: #fff;
+    text-decoration: none;
+   }
+}
+
+
+
+/* nav-open
+    when the navigation sidebar is open
+   */
+.nav-open {
+    overflow: hidden;
+    
+    .nav-open .main-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 100;
+    background-color: HSLA(218, 95%, 17%, 1.00);
+   }
+
+.nav-open .page-content {
+    transform: translateX(50%);
+   }
+
+.nav-open .main-content {
+    margin: 0;
+    padding: 0;
+   }
+
+.ul-info {
+  display: none;
+}
+
+}
+
+
