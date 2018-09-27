@@ -6,6 +6,7 @@
 		<title>CSS Pattern Library</title>
         <link rel="stylesheet" href="css/css.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	</head>
 	<body>
 		<header>
@@ -13,6 +14,15 @@
                 <h1>Pattern Library</h1>
                 <p>A practical approach to streamlining workflows<br> and coding processes across teams.</p>
             </div>
+            <nav class="nav-hamburger">
+                <ul>
+                    <li><a href="#!" title="Element 1">navigation</a></li>
+                    <li><a href="#!" title="Element 2">navigation</a></li>
+                    <li><a href="#!" title="Element 3">navigation</a></li>
+                    <li><a href="#!" title="Element 4">navigation</a></li>
+                    <li><i class="close-icon">&times;</i></li>
+                </ul>
+            </nav>
 		</header>
         <nav class="main-nav">
             <ul>
@@ -45,22 +55,13 @@
             <p>Hamburger Menus and closed navigations are becoming more popular. Keep in mind that if you are building a commercial website that customers don't look for hidden items even in menus. It's better to have you main navigation or most popular menu items out for everyone to see. You will also need to add a bit of JavaScript to get this one working.</p>
             <nav class="nav-hamburger-closed">
                 <ul>
-                  <li><i class="nav-icon" aria-hidden="true">ICON</i></li>
-                </ul>
-            </nav>
-            <nav class="nav-hamburger">
-            <i class="close-icon">&times;</i>
-                <ul>
-                    <li><a href="#!" title="Element 1">one</a></li>
-                    <li><a href="#!" title="Element 2">two</a></li>
-                    <li><a href="#!" title="Element 3">three</a></li>
-                    <li><a href="#!" title="Element 4">four</a></li>
+                  <li><i class="nav-icon fas fa-bars fa-2x" aria-hidden="true"></i></li>
                 </ul>
             </nav>
 		</main>
 		<footer>
 		</footer>
-        <script src="DEV/jquery-3.1.1.min.js"></script>
-		<script src="DEV/script.js"></script>
+        <script src="../DEV/jquery-3.1.1.min.js"></script>
+		<script src="../DEV/script.js"></script>
 	</body>
 </html

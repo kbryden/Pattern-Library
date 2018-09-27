@@ -1,7 +1,7 @@
 
 // to open nav
 var navButton = document.querySelector('.nav-icon');
-navButton.addEventListener('click', function() {
+navButton.addEventListener('click', function () {
   console.log('clicky!!!');
   document
     .querySelector('body')
@@ -20,11 +20,11 @@ closeButton.addEventListener('click', function() {
 });
 
 //to click nav elements
-$("document").ready(function() {
+//$("document").ready(function() {
 
-  $( ".main-nav ul li" ).click(function(){
-      console.log('clicky!!!');
-    $( ".main-nav ul li div" ).toggleClass(".ul-info");
-  });
+ // $( ".nav-hamburger ul li" ).click(function(){
+ //     console.log('clicky!!!');
+ //   $( ".nav-hamburger ul li div" ).toggleClass(".ul-info");
+ // });
 
-});
+//});

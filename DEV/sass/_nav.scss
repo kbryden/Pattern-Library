@@ -87,8 +87,18 @@
 /*this is the css for a hidden navigation in a hamburger menu*/
 
 /*main-nav*/
+.nav-icon {
+        cursor: pointer;
+    }
+
+.nav-icon:hover {
+        color: #FF0019;
+        transition: .25s;
+    }
+
+
 .nav-hamburger-closed {
-  height: 3em;
+  height: 10em;
   width: 100%;
   color: #4A4A4A;
   background-color: #ffffff;
@@ -96,76 +106,54 @@
     ul {
       list-style-type: none;
       width: 70%;
-      margin: .8rem auto;
+      margin: 0;
     }
     
     ul li {
       float: left;
-      padding: 0 1rem;
+      padding: 1.95rem;
+      cursor: pointer;
     }
 }
 
+/*open */
 .nav-hamburger {
     display: none;
-    background-color: HSLA(218, 95%, 17%, 1.00);
+    background-color: #FFBD5C;
     line-height: 2em;
-    color: #fff;
-    
-    
-    i {
-  font-style: normal;
-}
-
-.nav-icon {
-    cursor: pointer;
-    }
+    color: #343030;
 
     ul {
     list-style-type: none;
     position: relative;
+    text-align: center;
    }
 
     li {
     margin: .5em;
+    position: relative;
    }
 
     a{
-    color: #fff;
+    color: #343030;
     text-decoration: none;
    }
 
     a:hover{
-    color: HSLA(42, 75%, 53%, 1.00);
+    color: #FFBD5C;
     text-decoration: none;
+    text-transform: uppercase;
    }
 
     .close-icon {
-    font-style: normal;
-    position: absolute;
-    right: 1em;
-    color: #fff;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 2em;
+    color: #343030;
     line-height: 1;
     cursor: pointer;
+    margin: auto;
    }
 
-    li {
-    position: relative;
-   }
-
-    li ul {
-  display: none;
-  font-size: .85em;
-  line-height: 1em;
-}
-
-    li:hover ul {
-  display: block;
-}
-
-    li ul a {
-    color: #fff;
-    text-decoration: none;
-   }
 }
 
 
@@ -175,8 +163,11 @@
    */
 .nav-open {
     overflow: hidden;
-    
-    .nav-open .main-nav {
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 2em;
+}
+
+.nav-open .nav-hamburger {
     display: block;
     position: fixed;
     top: 0;
@@ -184,22 +175,20 @@
     width: 100%;
     min-height: 100%;
     z-index: 100;
-    background-color: HSLA(218, 95%, 17%, 1.00);
-   }
+    background-color: #D8D8D8;
+}
 
 .nav-open .page-content {
     transform: translateX(50%);
-   }
+}
 
 .nav-open .main-content {
     margin: 0;
     padding: 0;
-   }
-
-.ul-info {
-  display: none;
 }
 
-}
+
+
+
 
 
