@@ -28,7 +28,58 @@ body {
         width: 75%;
         
         p {
-           width: 75%;
+           width: 65%;
         }
     }
   }
+
+
+/*Typography is usually found on the main page of the Sass files*/
+
+.Headings {
+    h1 {
+        font-family: 'Lobster Two', cursive;
+        font-size: 3em;
+        padding: 1em 0 .25em 0;
+    }
+    
+    h2 {
+        font-family: 'Merriweather', serif;
+        font-size: 2em;
+        padding: 1em 0 .25em 0;  
+    }
+    
+    h3 {
+        font-family: 'Open Sans Bold', sans-serif;
+        font-size: 1.5em;
+        padding: 1em 0 .25em 0;  
+        color: #9B9B9B;
+        text-transform: uppercase;
+    }
+    
+    h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.25em;
+        padding: 1em 0 .25em 0;  
+        color: #9B9B9B;
+        text-transform: uppercase;
+    }
+    
+    h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-size: 1em;
+        padding: 1em 0 .25em 0;  
+        color: #221C1D;
+        text-transform: uppercase;
+    }
+    
+    h6 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1em;
+        padding: 1em 0 .25em 0;  
+        color: #FF0019;
+    }
+}
