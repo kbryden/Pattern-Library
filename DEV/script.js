@@ -6,7 +6,7 @@ navButton.addEventListener('click', function () {
   document
     .querySelector('body')
     .classList
-    .toggle('nav-open');
+    .toggle('nav-open')
 });
 
 //to close nav
@@ -16,8 +16,20 @@ closeButton.addEventListener('click', function() {
     document
       .querySelector('body')
       .classList
-      .toggle('nav-open');
+      .toggle('nav-open')
 });
+
+
+// to toggle dropdown
+var navButton = document.querySelector('.dropdown-closed');
+navButton.addEventListener('click', function () {
+  console.log('clicky!!!');
+  document
+    .querySelector('body')
+    .classList
+    .toggle('dropdown-open')
+});
+
 
 //to click nav elements
 //$("document").ready(function() {
@@ -28,3 +40,4 @@ closeButton.addEventListener('click', function() {
  // });
 
 //});
+

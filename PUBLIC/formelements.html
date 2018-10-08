@@ -6,6 +6,7 @@
 		<title>CSS Pattern Library</title>
         <link rel="stylesheet" href="css/css.css">
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Merriweather|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	</head>
 	<body>
 		<header>
@@ -33,7 +34,8 @@
             <h2>Buttons</h2>
             <p>Buttons can be styled in many different ways. There should be atleast two styles.</p>
             <a href="#!" title="Button"><button class="button" type="button">Button</button></a>
-            <a href="#!" title="Alt-Button"><button class="alt-button" type="alt-button">Alt-Button</button></a>
+            <a href="#!" title="Alt-Button"><button class="alt-button" type="submit">Alt-Button</button></a>
+            <a href="#!" title="Clear-Button"><button class="dropdown-button" type="submit">Drop-Down &nbsp;<i class="fas fa-caret-down"></i></button></a>
             <div class="formelements">
                 <h2>Inputs and Fields</h2>
                     <h3>Inputs</h3>
@@ -54,14 +56,45 @@
                     </form>
                     <h3>Input with Button</h3>
                     <form>
+                        <div class="col-1-2-left bg">
+                            <label for="first_name">Input Full Box with Button</label><br>
+                            <input placeholder="Enter Text" type="text" class="simpleinputclass input-with-button">
+                            <a href="#!" title="Submit"><button class="alt-button submitbutton" type="submit">Submit</button></a>
+                        </div>
+                        <div class="col-1-2-right bg">
+                            <label for="first_name">Input Full Box with Search Icon</label><br>
+                            <input placeholder="Type Here..." type="text" class="simpleinputclass input-with-button">
+                            <a href="#!" title="Search"><button class="alt-button searchbutton" type="submit"><i class="fas fa-search"></i></button></a>
+                        </div>
                     </form>
                     <h3>Input with Error or Required Message</h3>
-                    <h3>Search</h3>
+                    <form>
+                        <div>
+                            <label for="first_name">Error Messages</label><br>
+                            <input placeholder="Invalid Input" type="text" class="simpleinput">
+                            <p class="error-message"><i class="fas fa-exclamation-circle"></i> This is an error message.</p>
+                        </div>
+                    </form>
                     <h3>Dropdowns</h3>
-                    <h3>Dropdown Multi-Select</h3>
+                    <div class="dropdown-closed">
+                          <a href="#!" title="Clear-Button"><button class="dropdown-button" type="submit">Drop-Down &nbsp;<i class="fas fa-caret-down"></i></button></a>
+                    </div>
+                    <div class="dropdown-open">
+                         <ul>
+                            <li><a href="#!" title="Element 1">one</a></li>
+                            <li><a href="#!" title="Element 2">two</a></li>
+                            <li><a href="#!" title="Element 3">three</a></li>
+                            <li><a href="#!" title="Element 4">four</a></li>
+                        </ul>
+                    </div>
                     <h3>Calendar or Date Picker</h3>
                     <h3>Date and Time</h3>
                 <h2>Radio Buttons and Checkboxes</h2>
+                    <form action="">
+                          <input class="radio" type="radio" name="options" value="An Option"> An Option<br>
+                          <input type="radio" name="options" value="An Option"> An Option<br>
+                          <input type="radio" name="options" value="An Option"> An Option
+                    </form>
                 <h2>Switches and Toggles</h2>
                 <h2>Help Pop-Ups</h2>
             </div>
