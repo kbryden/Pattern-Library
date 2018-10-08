@@ -49,3 +49,61 @@
     border: .1rem solid #343030;
     color: #343030;
 }
+
+/*form elements can easily be stylized by adding a class element to the containing div.*/
+
+.formelements {
+    
+    /*This will keep your form from getting other elements mixed in.*/
+    form {
+        display: block;
+        width: 100%;
+        height: 5em;
+    }
+    
+    /*this affects the label above the input */
+    label {
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: #4A4A4A;
+    }
+    
+    
+    /*Here I will show you how to stylize the box surrounding your form element.*/
+    .partial_box {
+        border-top: .001rem solid #ffffff;
+        border-left: .001rem solid #FFBD5C;
+        border-right: .001rem solid #ffffff;
+        border-bottom: .001rem solid #FFBD5C;
+    }
+    
+    .single_line {
+        border: .001rem solid #ffffff;
+        border-bottom: .001rem solid #4A4A4A;
+    }
+    
+    /*this will change the color of your placeholder text. The default is too dark so try to make it obvious the form hasn't already been filled out with a lighter color.*/
+    input::placeholder {
+        color: #D8D8D8;
+    }
+    
+    /*make sure you target the input to get the text to change*/
+    input, .simpleinput {
+        padding: .75em;
+        margin: .25em 0;
+        border: .001rem solid #9B9B9B;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+        color: #4A4A4A;
+    }
+    
+    /* I've put our form elements into the grid we used on Grid Systems. Since the grid has already been created, I just need to remove the background color here. Your CSS library won't need a background color on your grid so don't worry about this step.*/
+    .col-1-2-left, .col-1-2-right {
+        background-color: #ffffff;
+        width: 14em;
+    }
+
+    
+}
