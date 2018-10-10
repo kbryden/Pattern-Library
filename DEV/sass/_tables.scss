@@ -1,0 +1,49 @@
+
+/* tables are very easy to personalize and make it easy for your users to read. Just keep in mind that fillng a data table may take some JavaScript.*/
+.basic-table {
+    
+    /*this will get rid of the space between columns and rows on your table*/
+    border-collapse: collapse;
+    margin: 1rem 0 2rem 0;
+    
+    table, th, td {
+        border: .001rem solid #343030;
+    }
+    
+    th {
+        font-family: 'Open Sans Bold', sans-serif;
+        font-size: 1em;
+        color: #343030;
+        padding: 1rem 1rem 1rem .5rem;
+        vertical-align: middle;
+        text-align: left;
+    }
+    
+    td {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        font-size: 1em;
+        color: #4A4A4A;
+        padding: .5rem;
+        vertical-align: top;
+        width: 25%;
+    }
+    
+    /*give the rows a color alternating as your table grows*/
+    tr:nth-child(even) {
+        background: #E8E8E8;
+    }
+    
+    tr:nth-child(odd) {
+        background: #FFF;
+    }
+    
+    /*I threw in a hover element because it could help users know where they are when the table is extremely long.*/
+    tr:hover {
+        background: #FFBD5C;
+    }
+}
+
+
+
+
