@@ -1,0 +1,55 @@
+/*You will find this line of code normally in the reset.scss file but I've included a copy here for intuitive convenience. This resets the list style so that you can add your own styling to the lists.  
+
+ul { list-style: none; }
+
+*/
+
+
+.unordered-list {
+    .circle {
+        list-style-type: circle;
+    }
+
+    .square {
+        list-style-type: square;
+    }
+    
+    .nav-list li {
+        float: left;
+        padding: 1rem;
+    }
+    
+    li {
+        font-size: .9em;
+    }
+    
+    /*insert anything before to add color*/
+    .circle-color li::before {
+        content: "*";
+        padding: 0 .25rem 0 0;
+        color: #FFBD5C;
+    }
+}
+
+
+.ordered-list {
+    .roman {
+        list-style-type: upper-roman;
+    }
+
+    .alpha {
+        list-style-type: lower-alpha;
+        /*Put your list in a box to make it stand out more*/
+        border: .001rem solid #FFBD5C;
+        width: 25%;
+        margin: 0;
+        padding: 1rem 1rem 1rem 2rem;
+    }
+    
+    li {
+        /*the padding here applies to all sides of the list item not the bullet or number*/
+        padding: .25rem .5rem 0 .25rem;
+        font-size: .9em;
+    }
+    
+}
