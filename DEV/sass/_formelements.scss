@@ -311,3 +311,22 @@ input:checked ~ .checkmark:after {
     background-color: #ccc;
 }
 
+/*styling for Date Picker*/
+
+.datepicker {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #343030;
+    
+    .fa-calendar-alt {
+        color: #FFBD5C;
+        margin: 0 0 0 -2rem;
+        text-align: center;
+    }
+    
+    #datepicker{ 
+    border: .001rem solid #343030;
+    }
+}
+
